@@ -1,0 +1,405 @@
+/* Reset default font family for all elements */
+body * {
+  font-family: "Tajawal", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.header {
+  padding: 0 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav .center ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-weight: 600;
+  font-size: medium;
+}
+.header nav .center ul li {
+  list-style: none;
+}
+.header nav .center ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header nav .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+}
+.header nav .right .button-login {
+  border-radius: 8px;
+  padding: 8px 10px;
+  background-color: transparent;
+  border: 1px solid #E5AF10;
+}
+
+/* Main content styles */
+main article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main article .hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+main article .hero .left {
+  width: 50%;
+}
+main article .hero .left img {
+  display: inline;
+}
+main article .hero .right {
+  width: 50%;
+}
+main article .hero .right h1 {
+  font-weight: 800;
+  font-size: 48px;
+  width: 550px;
+}
+main article .hero .right p {
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 505px;
+  word-spacing: 5px;
+}
+main article .hero .right .container {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 31px;
+}
+main article .hero .right .container button {
+  border-radius: 8px;
+  border: 1px solid #E5AF10;
+  padding: 18px 24px;
+}
+main article .hero .right .container button:hover {
+  cursor: pointer;
+  border: 2px solid #E5AF10;
+}
+main article .hero .right .container .button-main {
+  background-color: #E5AF10;
+  color: white;
+}
+main article .hero .right .container .button {
+  background-color: transparent;
+  color: black;
+}
+main article .how-you-can-order {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main article .how-you-can-order .header h1 {
+  position: relative;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+main article .how-you-can-order .header h1 .title-line {
+  height: 2px;
+  width: 50%;
+  background: #E5AF10;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+main article .how-you-can-order .body {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main article .how-you-can-order .body .card {
+  box-sizing: border-box;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C6C6C6;
+  border-radius: 8px;
+  padding: 24px;
+}
+main article .how-you-can-order .body .card img {
+  width: 260px;
+  height: 260px;
+}
+main article .how-you-can-order .body .card .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main article .how-you-can-order .body .card .body h3 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+main article .how-you-can-order .body .card .body p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+}
+main article .popular-food {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main article .popular-food .header h1 {
+  position: relative;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+main article .popular-food .header h1 .title-line {
+  height: 2px;
+  width: 50%;
+  background: #E5AF10;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+main article .popular-food .tabs {
+  box-sizing: border-box;
+  width: 90%;
+  padding: 10px 4.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main article .popular-food .tabs .left {
+  width: 90%;
+}
+main article .popular-food .tabs .left ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #C6C6C6;
+  padding: 12px 0px;
+  border-radius: 8px;
+}
+main article .popular-food .tabs .left ul li {
+  padding: 12px 20px;
+  border-radius: 8px;
+  list-style: none;
+  text-align: center;
+}
+main article .popular-food .tabs .left ul li:hover {
+  cursor: pointer;
+}
+main article .popular-food .tabs .left ul :first-child {
+  color: white;
+  background-color: #E5AF10;
+}
+main article .popular-food .tabs .right {
+  border: 1px solid #C6C6C6;
+  padding: 12px 8px;
+  border-radius: 8px;
+}
+main article .popular-food .tabs .right:hover {
+  cursor: pointer;
+}
+main article .popular-food .body {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main article .popular-food .body .card {
+  box-sizing: border-box;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C6C6C6;
+  border-radius: 8px;
+  padding: 24px;
+}
+main article .popular-food .body .card img {
+  width: 260px;
+  height: 260px;
+}
+main article .popular-food .body .card .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+main article .popular-food .body .card .body h3 {
+  font-size: 32px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+main article .popular-food .body .card .body p {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 16px;
+  height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main article .popular-food .body .card .body .price-info-and-add-to-cart {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main article .popular-food .body .card .body .price-info-and-add-to-cart img {
+  width: 32px;
+  height: 32px;
+}
+main article .popular-food .body .card .body .price-info-and-add-to-cart img:hover {
+  cursor: pointer;
+}
+main article .popular-food .body .card .body .price-info-and-add-to-cart span {
+  font-size: 20px;
+  font: 900;
+}
+main article .special-offer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main article .special-offer .header h1 {
+  position: relative;
+  font-size: 40px;
+  margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+main article .special-offer .header h1 .title-line {
+  height: 2px;
+  width: 50%;
+  background: #E5AF10;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+main article .special-offer .body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main article .special-offer .body .left {
+  width: 30%;
+}
+main article .special-offer .body .right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+}
+main article .special-offer .body .right h1 {
+  font-size: 42px;
+  margin: 0;
+  padding: 0;
+}
+main article .special-offer .body .right p {
+  padding: 0;
+  margin: 5px;
+  text-align: start;
+  font-size: 16px;
+}
+main article .special-offer .body .right button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #E5AF10;
+  color: white;
+  border: 1px solid #E5AF10;
+  border-radius: 8px;
+  padding: 12px 24px;
+}
+main article .special-offer .body .right button:hover {
+  cursor: pointer;
+}
+main .marker {
+  color: #E5AF10;
+}
+
+footer {
+  margin-top: 50px;
+  height: 492px;
+  background: rgba(241, 199, 78, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .up {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: ceter;
+}
+footer .up .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .bootom {
+  height: 10%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: ceter;
+}/*# sourceMappingURL=style.css.map */
