@@ -7,11 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="style.scss" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+
     <title>Document</title>
 </head>
 
 <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <header class="header">
         <nav>
@@ -35,11 +41,11 @@
     </header>
     <main>
         <article>
-            <section class="hero">
-                <div class="left">
+            <section data-aos="fade-up" class="hero">
+                <div data-aos="flip-left" class="left">
                     <img src="assets/Allustration.svg" alt="Allustration image">
                 </div>
-                <div class="right">
+                <div data-aos="zoom-in-down" class="right">
                     <h1>Happy With <span class="marker"> Delicious</span> <span class="marker"> Food</span> And Get New
                         Experiences With Asian Food</h1>
                     <p>Exploring new food with different transition form all Asian country especially from Cambodia that
@@ -57,14 +63,14 @@
 
                 </div>
                 <div class="body">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/Select Food.svg" alt=""></div>
                         <div class="body">
                             <h3>Select Food</h3>
                             <p> selecting the type of food you want to order</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/Placement.svg" alt=""></div>
                         <div class="body">
                             <h3>Customization</h3>
@@ -72,7 +78,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/image 27.svg" alt=""></div>
                         <div class="body">
                             <h3>Placement</h3>
@@ -80,7 +86,7 @@
                                 contact</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/Pick up.svg" alt=""></div>
                         <div class="body">
                             <h3> Delivery/Pickup</h3>
@@ -112,7 +118,7 @@
                     </div>
                 </div>
                 <div class="body">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/image 30.svg" alt=""></div>
                         <div class="body">
                             <h3>Select Food</h3>
@@ -123,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/image 31.svg" alt=""></div>
                         <div class="body">
                             <h3>Select Food</h3>
@@ -134,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/image 31.svg" alt=""></div>
                         <div class="body">
                             <h3>Select Food</h3>
@@ -145,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/image 31.svg" alt=""></div>
                         <div class="body">
                             <h3>Select Food</h3>
@@ -156,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/image 31.svg" alt=""></div>
                         <div class="body">
                             <h3>Select Food</h3>
@@ -167,7 +173,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/image 30.svg" alt=""></div>
                         <div class="body">
                             <h3>Select Food</h3>
@@ -178,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/image 30.svg" alt=""></div>
                         <div class="body">
                             <h3>Select Food</h3>
@@ -189,7 +195,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-down">
                         <div><img src="assets/image 30.svg" alt=""></div>
                         <div class="body">
                             <h3>Select Food</h3>
@@ -207,34 +213,117 @@
                     <h1>Special Offer <span class="title-line"></span></h1>
                 </div>
                 <div class="body">
-                    <div class="left">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="left">
                         <img src="assets/Group 2.svg" alt="" srcset="">
                     </div>
                     <div class="right">
                         <h1>Get <span class="marker">50% </span> Off On Curry</h1>
-                        <p>We offer 50% of on this food, we want you all to try Khmer food which has a good taste that everyone should try </p>
+                        <p>We offer 50% of on this food, we want you all to try Khmer food which has a good taste that
+                            everyone should try </p>
                         <button>Order Now <img src="assets/shopping_cart.svg" alt=""></button>
                     </div>
                 </div>
             </section>
 
-            <section id="place-of-our-restaurant" class="place-of-our-restaurant"></section>
-            <section id="review-form-our-customers-say" class="review-form-our-customers-say"></section>
-            <section id="stay-in-touch" class="stay-in-touch"></section>
+            <section id="place-of-our-restaurant" class="place-of-our-restaurant">
+                <div class="header">
+                    <h1>Place of our restaurant <span class="title-line"></span></h1>
+                </div>
+                <div class="body">
+                    <div class="left">
+                        <h1>Clean and comfortable</h1>
+                        <p>We provide the best service and good food for our lovely customers </p>
+                    </div>
+                    <div class="right">
+                        <img data-aos="fade-up" data-aos-duration="1000" src="assets/image 42.svg" alt="" srcset="">
+                    </div>
+                </div>
+            </section>
+            <section id="review-form-our-customers-say" class="review-form-our-customers-say">
+                <div class="header">
+                    <h1>Place of our restaurant <span class="title-line"></span></h1>
+                </div>
+                <div class="body">
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="review-card">
+                        <div class="header">
+                            <img src="assets/Ellipse 10.svg" alt="">
+                            <h3>Andia jorida</h3>
+                        </div>
+                        <div class="body">
+                            <p>My experience at your restaurant was truly excellent. The food was absolutely delicious -
+                                every dish was perfectly cooked and bursting with flavor. But what really impressed me
+                                was the service. Your staff was attentive, friendly which make me feel want to be there
+                                again.</p>
+                            <span>
+                                <i class="ph-fill ph-star yellow-star"></i>
+                                <i class="ph-fill ph-star yellow-star"></i>
+                                <i class="ph-fill ph-star yellow-star"></i>
+                                <i class="ph-fill ph-star yellow-star"></i>
+                                <i class="ph-fill ph-star yellow-star"></i>
+                                5 stars
+                            </span>
+                        </div>
+                    </div>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="review-card">
+                        <div class="header">
+                            <img src="assets/Ellipse 10.svg" alt="">
+                            <h3>Andia jorida</h3>
+                        </div>
+                        <div class="body">
+                            <p>My experience at your restaurant was truly excellent. The food was absolutely delicious -
+                                every dish was perfectly cooked and bursting with flavor. But what really impressed me
+                                was the service. Your staff was attentive, friendly which make me feel want to be there
+                                again.</p>
+                            <span>
+                                <i class="ph-fill ph-star yellow-star"></i>
+                                <i class="ph-fill ph-star yellow-star"></i>
+                                <i class="ph-fill ph-star yellow-star"></i>
+                                <i class="ph-fill ph-star yellow-star"></i>
+                                <i class="ph-fill ph-star yellow-star"></i>
+                                5 stars
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <span>Add A review </span>
+                    <img src="assets/add (1).svg" alt="">
+                </div>
+            </section>
+            <section id="stay-in-touch" class="stay-in-touch">
+                <div class="header">
+                    <h1>Stay in touch <span class="title-line"></span></h1>
+                </div>
+                <div class="body">
+                    <form action="">
+                        <h1>Login to our channel</h1>
+                        <div class="row">
+                            <label for="">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter Your email">
+                        </div>
+                        <button>Login Now</button>
+                    </form>
+                </div>
+                <div>
+                    <img src="assets/Asianfood.svg" alt="" srcset="">
+                </div>
+            </section>
         </article>
-        
+
     </main>
-    <footer>    
+    <footer>
         <div class="up">
             <div class="container">
-                <div class="logo"><img src="assets/Asianfood.svg" alt=""></div> 
+                <div class="logo"><img src="assets/Asianfood.svg" alt=""></div>
                 <br>
                 <h3>Accepted payment</h3>
                 <br>
                 <div class="payment-logos">
-                    <img src="assets/image 34.svg" alt="" >
-                    <img src="assets/image 35.svg" alt="" >
-                    <img src="assets/image 33.svg" alt="" >
+                    <img src="assets/image 34.svg" alt="">
+                    <img src="assets/image 35.svg" alt="">
+                    <img src="assets/image 33.svg" alt="">
                 </div>
             </div>
             <div class="container">
@@ -246,16 +335,17 @@
                     <img src="assets/image 38.svg" alt="" srcset="">
                 </div>
             </div>
-            <div class="container"> 
+            <div class="container">
                 <h3>Support</h3>
                 <h3>FAQ</h3>
                 <h3>Contact</h3>
             </div>
             <div class="container">
-                
+
                 <h3>Location</h3>
                 <br>
-                <p>25°11'46.7"N 55°16'35.6"E (Burj Khalifa, Dubai)</p>  
+                <p>25°11'46.7"N 55°16'35.6"E </p>
+                <p>(Burj Khalifa, Dubai)</p>
             </div>
         </div>
         <hr>

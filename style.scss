@@ -3,6 +3,7 @@ body * {
     font-family: 'Tajawal', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Header styles */
@@ -63,21 +64,30 @@ body * {
 
 /* Main content styles */
 main {
+    width: 100%;
     article {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
+        section {
+            margin-bottom: 100px;
+        }
+
         .hero {
+            width: 100%;
+            padding: 10px 0px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 20%;
+            flex-wrap: wrap;
+            gap: 150px;
 
             .left {
-                width: 50%;
+                width: 40%;
 
                 img {
                     display: inline;
@@ -86,6 +96,11 @@ main {
 
             .right {
                 width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                gap: 20px;
 
                 h1 {
                     font-weight: 800;
@@ -267,6 +282,8 @@ main {
 
                             &:hover {
                                 cursor: pointer;
+                                color: white;
+                                background-color: #E5AF10;
                             }
                         }
                     }
@@ -443,9 +460,277 @@ main {
                 }
             }
         }
+
+        .place-of-our-restaurant {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .header {
+
+                h1 {
+                    position: relative;
+                    font-size: 40px;
+                    margin-bottom: 50px;
+
+                    .title-line {
+                        height: 2px;
+                        width: 50%;
+                        background: #E5AF10;
+                        position: absolute;
+                        bottom: 0;
+                        margin: 0 auto;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            .body {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .left {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    width: 40%;
+
+                    h1 {
+                        font-size: 32px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        width: 70%;
+                    }
+                }
+
+                .right {
+                    img {}
+                }
+            }
+        }
+
+        .review-form-our-customers-say {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .header {
+                h1 {
+                    position: relative;
+                    font-size: 40px;
+                    margin-bottom: 50px;
+
+                    .title-line {
+                        height: 2px;
+                        width: 50%;
+                        background: #E5AF10;
+                        position: absolute;
+                        bottom: 0;
+                        margin: 0 auto;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            .body {
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 56px;
+                flex-wrap: wrap;
+
+                .review-card {
+                    width: 47.9%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 20px;
+                    border: 1px solid #C6C6C6;
+                    border-radius: 8px;
+                    padding: 24px;
+
+                    .header {
+                        padding: 0;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-direction: row;
+                        gap: 10px;
+                        cursor: pointer;
+
+                        h3 {
+                            font-size: x-large;
+                        }
+
+                        img {
+                            box-sizing: content-box;
+                        }
+
+                    }
+
+                    .body {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+
+                        i {}
+                    }
+                }
+            }
+
+            .footer {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: flex-start;
+                gap: 5px;
+                cursor: pointer;
+
+            }
+        }
+
+        .stay-in-touch {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .header {
+                h1 {
+                    position: relative;
+                    font-size: 40px;
+                    margin-bottom: 50px;
+
+                    .title-line {
+                        height: 2px;
+                        width: 50%;
+                        background: #E5AF10;
+                        position: absolute;
+                        bottom: 0;
+                        margin: 0 auto;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+
+            .body {
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 56px;
+                flex-wrap: wrap;
+
+                form {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border: 1px solid #C6C6C6;
+                    border-radius: 8px;
+                    gap: 20px;
+                    padding: 24px;
+                    h1 {
+                        font-size: 42;
+                        font-weight: 400;
+                    }
+                    .row {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        gap: 5px;
+                        label {
+                            font-size: 42px;
+                        }
+                        input {
+                            box-sizing: border-box;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 20px;
+                            gap: 10px;
+                            border: 1px solid #C6C6C6;
+                            border-radius: 8px;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #000000;
+
+                        }
+                       
+                    }
+                    button {
+                        width: 100% !important;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        background-color: #E5AF10;
+                        border: 1px solid #E5AF10;
+                        border-radius: 8px;
+                        padding: 18px 0px;
+                        cursor: pointer;
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .footer {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: flex-start;
+                gap: 5px;
+                cursor: pointer;
+            }
+        }
     }
 
     .marker {
+        color: #E5AF10;
+    }
+
+    .yellow-star {
         color: #E5AF10;
     }
 }
@@ -458,6 +743,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     .up {
         width: 90%;
         height: 90%;
@@ -465,7 +751,7 @@ footer {
         flex-direction: row;
         justify-content: space-around;
         align-items: ceter;
-        
+
         .container {
             display: flex;
             justify-content: center;
@@ -473,6 +759,7 @@ footer {
             flex-direction: column;
         }
     }
+
     .bootom {
         height: 10%;
         width: 90%;
